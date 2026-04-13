@@ -1,0 +1,27 @@
+{
+  "name": "slicepdf",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev": "concurrently -n server,client -c blue,green \"npm run dev -w server\" \"npm run dev -w client\"",
+    "dev:client": "npm run dev -w client",
+    "dev:server": "npm run dev -w server",
+    "build": "npm run build -w client && echo 'Build complete.'",
+    "build:client": "npm run build -w client",
+    "build:server": "npm run build -w server",
+    "start": "tsx server/src/index.ts",
+    "test": "vitest --run",
+    "test:client": "npm run test -w client",
+    "test:server": "npm run test -w server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "fast-check": "^4.1.1",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.1"
+  }
+}

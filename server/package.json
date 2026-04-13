@@ -1,0 +1,31 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "tsx src/index.ts",
+    "build": "tsc",
+    "test": "vitest --run"
+  },
+  "dependencies": {
+    "canvas": "^3.2.3",
+    "cors": "^2.8.6",
+    "express": "^5.1.0",
+    "jszip": "^3.10.1",
+    "multer": "^2.1.1",
+    "pdf-lib": "^1.17.1",
+    "pdfjs-dist": "^5.6.205"
+  },
+  "devDependencies": {
+    "@fast-check/vitest": "^0.4.0",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.2",
+    "@types/multer": "^2.1.0",
+    "@types/node": "^22.15.21",
+    "@types/supertest": "^7.2.0",
+    "supertest": "^7.2.2",
+    "tsx": "^4.19.4"
+  }
+}
