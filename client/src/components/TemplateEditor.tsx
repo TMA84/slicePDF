@@ -225,7 +225,7 @@ export default function TemplateEditor({
           value={dokumentName}
           onChange={(e) => onDokumentNameChange(e.target.value)}
           className="w-full rounded border border-gray-300 px-3 py-1.5 text-sm text-gray-800 placeholder-gray-400 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
-          placeholder="z.B. Endabrechnung Bonus, Zielvereinbarung 2026"
+          placeholder="z.B. Gehaltsabrechnung, Arbeitsvertrag, Bescheinigung"
         />
       </div>
 
