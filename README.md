@@ -21,7 +21,7 @@ npm run build
 npm start
 ```
 
-Die App läuft auf `http://localhost:3001`.
+Die App läuft auf `http://localhost:8080`.
 
 ## Entwicklung
 
@@ -36,13 +36,13 @@ Startet Client (Vite, Port 5173) und Server (Express, Port 3001) parallel.
 
 ```bash
 docker build -t slicepdf .
-docker run -p 3001:3001 slicepdf
+docker run -p 8080:8080 slicepdf
 ```
 
 Oder direkt vom GitHub Container Registry:
 
 ```bash
-docker run -p 3001:3001 ghcr.io/tma84/slicepdf:latest
+docker run -p 8080:8080 ghcr.io/tma84/slicepdf:latest
 ```
 
 ## Tests
